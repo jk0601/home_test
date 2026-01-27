@@ -335,7 +335,7 @@
             </div>
         </div>
     </section>
-    
+
     <!-- Video Section -->
     <section class="py-20 bg-gray-50">
         <div class="container mx-auto px-6">
@@ -358,48 +358,44 @@
                 <div class="md:w-1/3 p-10 bg-blue-800">
                     <h2 class="text-2xl font-bold mb-6">지금 신청하세요</h2>
                     <p class="mb-8 text-blue-100">2026년, 당신의 커리어를 바꿀 5주. 전문가 대열에 합류할 기회는 단 5일뿐입니다.</p>
-                    <div class="space-y-4">
-                        <div class="text-sm">
+                    <div class="space-y-4 text-sm">
+                        <div>
                             <p class="text-blue-300 font-bold">접수 기간</p>
                             <p>2026.01.26 ~ 01.30</p>
                         </div>
-                        <div class="text-sm">
+                        <div>
                             <p class="text-blue-300 font-bold">참가비 문의</p>
                             <p>AISH 운영사무국</p>
                         </div>
                     </div>
                 </div>
+                
                 <div class="md:w-2/3 p-10">
                     <form id="applyForm" class="space-y-4 text-gray-800">
                         <div class="grid grid-cols-2 gap-4">
                             <div>
                                 <label class="block text-white text-sm mb-1">성명</label>
-                                <input type="text" placeholder="이름 입력" class="w-full px-4 py-2 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                                <input type="text" name="name" placeholder="이름 입력" class="w-full px-4 py-2 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500" required>
                             </div>
                             <div>
                                 <label class="block text-white text-sm mb-1">연락처</label>
-                                <input type="tel" placeholder="010-0000-0000" class="w-full px-4 py-2 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                                <input type="tel" name="phone" placeholder="010-0000-0000" class="w-full px-4 py-2 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500" required>
                             </div>
                         </div>
                         <div class="grid grid-cols-2 gap-4">
                             <div>
                                 <label class="block text-white text-sm mb-1">이메일 주소</label>
-                                <input type="email" placeholder="example@email.com" class="w-full px-4 py-2 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                                <input type="email" name="email" placeholder="example@email.com" class="w-full px-4 py-2 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500" required>
                             </div>
                             <div>
                                 <label class="block text-white text-sm mb-1">기수 확인</label>
-                                <select class="w-full px-4 py-2 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 bg-white" required>
+                                <select name="batch" class="w-full px-4 py-2 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 bg-white" required>
                                     <option value="" disabled selected>기수 선택</option>
-                                    <option value="1">1기</option>
-                                    <option value="2">2기</option>
-                                    <option value="3">3기</option>
-                                    <option value="4">4기</option>
-                                    <option value="5">5기</option>
-                                    <option value="6">6기</option>
-                                    <option value="7">7기</option>
-                                    <option value="8">8기</option>
-                                    <option value="9">9기</option>
-                                    <option value="10">10기</option>
+                                    <option value="1">1기</option><option value="2">2기</option>
+                                    <option value="3">3기</option><option value="4">4기</option>
+                                    <option value="5">5기</option><option value="6">6기</option>
+                                    <option value="7">7기</option><option value="8">8기</option>
+                                    <option value="9">9기</option><option value="10">10기</option>
                                 </select>
                             </div>
                         </div>
@@ -407,23 +403,78 @@
                             <label class="block text-white text-sm mb-2">참가 희망 과정 (1개 트랙 선택)</label>
                             <div class="grid grid-cols-1 md:grid-cols-2 gap-2 text-white text-sm">
                                 <label class="flex items-center space-x-2 cursor-pointer bg-white/5 p-2 rounded hover:bg-white/10 transition-colors">
-                                    <input type="radio" name="course-track" value="A" class="w-4 h-4 text-blue-600 focus:ring-blue-500 bg-gray-700 border-gray-600" required> <span>Track A. 정부지원사업 마스터</span>
+                                    <input type="radio" name="course" value="Track A. 정부지원사업 마스터" class="w-4 h-4 text-blue-600" required> <span>Track A. 정부지원사업 마스터</span>
                                 </label>
                                 <label class="flex items-center space-x-2 cursor-pointer bg-white/5 p-2 rounded hover:bg-white/10 transition-colors">
-                                    <input type="radio" name="course-track" value="B" class="w-4 h-4 text-blue-600 focus:ring-blue-500 bg-gray-700 border-gray-600"> <span>Track B. 영상 마케팅 정복</span>
+                                    <input type="radio" name="course" value="Track B. 영상 마케팅 정복" class="w-4 h-4 text-blue-600"> <span>Track B. 영상 마케팅 정복</span>
                                 </label>
                                 <label class="flex items-center space-x-2 cursor-pointer bg-white/5 p-2 rounded hover:bg-white/10 transition-colors">
-                                    <input type="radio" name="course-track" value="C" class="w-4 h-4 text-blue-600 focus:ring-blue-500 bg-gray-700 border-gray-600"> <span>Track C. 웹사이트 구축</span>
+                                    <input type="radio" name="course" value="Track C. 웹사이트 구축" class="w-4 h-4 text-blue-600"> <span>Track C. 웹사이트 구축</span>
                                 </label>
                                 <label class="flex items-center space-x-2 cursor-pointer bg-white/5 p-2 rounded hover:bg-white/10 transition-colors">
-                                    <input type="radio" name="course-track" value="D" class="w-4 h-4 text-blue-600 focus:ring-blue-500 bg-gray-700 border-gray-600"> <span>Track D. AI 에이전트 혁신</span>
+                                    <input type="radio" name="course" value="Track D. AI 에이전트 혁신" class="w-4 h-4 text-blue-600"> <span>Track D. AI 에이전트 혁신</span>
                                 </label>
                             </div>
                         </div>
-                        <button type="submit" class="w-full bg-accent-gold hover:bg-yellow-500 text-blue-900 font-bold py-4 rounded-lg mt-6 transition-colors text-lg uppercase">
-                            [전문가 과정 신청하기]
+                        <button type="submit" id="submitBtn" class="w-full bg-accent-gold hover:bg-yellow-500 text-blue-900 font-bold py-4 rounded-lg mt-6 transition-all text-lg uppercase flex items-center justify-center">
+                            <span id="btnText">[전문가 과정 신청하기]</span>
+                            <span id="loadingSpinner" class="hidden animate-spin ml-3"><i class="fas fa-circle-notch"></i></span>
                         </button>
                     </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Success Modal -->
+    <div id="successModal" class="fixed inset-0 bg-black/60 hidden items-center justify-center z-[100] px-4">
+        <div class="bg-white rounded-2xl p-8 max-w-sm w-full text-center shadow-2xl">
+            <div class="w-16 h-16 bg-green-100 text-green-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                <i class="fas fa-check text-2xl"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-2">신청이 완료되었습니다!</h3>
+            <p class="text-gray-600 mb-6 text-sm">데이터가 스프레드시트에 저장되었으며, 담당자(jkj0601@gmail.com)에게 확인 메일이 발송되었습니다.</p>
+            <button onclick="closeModal()" class="w-full bg-blue-600 text-white py-3 rounded-lg font-bold">확인</button>
+        </div>
+    </div>
+
+    <!-- 상담챗봇 섹션 (추가됨) -->
+    <section id="chatbot" class="py-16 bg-blue-50">
+        <div class="container mx-auto px-6 text-center">
+            <div class="max-w-3xl mx-auto bg-white p-10 rounded-3xl shadow-lg border border-blue-100 fade-in">
+                <div class="mb-6 floating-bot text-blue-600">
+                    <i class="fas fa-robot text-6xl"></i>
+                </div>
+                <h2 class="text-3xl font-black mb-4 text-blue-900">교육에 대해 무엇이든지 물어보세요</h2>
+                <p class="text-gray-600 mb-8 leading-relaxed">
+                    AISH 전문가 마스터 클래스에 대해 궁금한 점이 있으신가요? <br>
+                    AI 상담 챗봇이 커리큘럼부터 수강 혜택까지 모든 정보를 실시간으로 안내해 드립니다.
+                </p>
+                <a href="https://notebooklm.google.com/notebook/7c4e7b77-e9c9-4937-9053-39c246279c36" 
+                   target="_blank" 
+                   class="inline-flex items-center justify-center bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-10 rounded-xl text-lg transition-all shadow-md group">
+                    <i class="fas fa-comments mr-3"></i>
+                    AI 상담 챗봇 바로가기
+                    <i class="fas fa-arrow-right ml-3 group-hover:translate-x-1 transition-transform"></i>
+                </a>
+                <p class="mt-6 text-sm text-gray-400">※ Google NotebookLM을 기반으로 상시 답변을 제공합니다.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Image Gallery Section -->
+    <section class="py-12 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="rounded-2xl overflow-hidden shadow-lg fade-in">
+                    <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=800&q=80" alt="Floating Cubes" class="w-full h-64 object-cover hover:scale-105 transition-transform duration-500">
+                </div>
+                <div class="rounded-2xl overflow-hidden shadow-lg fade-in">
+                    <img src="https://images.unsplash.com/photo-1635350736475-c8cef4b21906?auto=format&fit=crop&w=800&q=80" alt="Diamond Metal Object" class="w-full h-64 object-cover hover:scale-105 transition-transform duration-500">
+                </div>
+                <div class="rounded-2xl overflow-hidden shadow-lg fade-in">
+                    <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=800&q=80" alt="Man using MacBook" class="w-full h-64 object-cover hover:scale-105 transition-transform duration-500">
                 </div>
             </div>
         </div>
@@ -437,43 +488,61 @@
         </div>
     </footer>
 
-    <!-- Success Modal -->
-    <div id="successModal" class="fixed inset-0 bg-black/60 hidden items-center justify-center z-[100] px-4">
-        <div class="bg-white rounded-2xl p-8 max-w-sm w-full text-center">
-            <div class="w-16 h-16 bg-green-100 text-green-600 rounded-full flex items-center justify-center mx-auto mb-4">
-                <i class="fas fa-check text-2xl"></i>
-            </div>
-            <h3 class="text-xl font-bold mb-2">신청이 완료되었습니다!</h3>
-            <p class="text-gray-600 mb-6">입력하신 이메일로 상세 안내 메일을 발송해 드렸습니다. 전문가로의 첫 걸음을 응원합니다.</p>
-            <button onclick="closeModal()" class="w-full bg-blue-600 text-white py-3 rounded-lg font-bold">확인</button>
-        </div>
-    </div>
-
     <script>
         // Intersection Observer for scroll animations
-        const observerOptions = {
-            threshold: 0.1
-        };
-
+        const observerOptions = { threshold: 0.1 };
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('visible');
-                }
+                if (entry.isIntersecting) entry.target.classList.add('visible');
             });
         }, observerOptions);
-
         document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
 
-        // Form Submission Logic
+        // --- 자동화 구성 정보 ---
+        // Google Apps Script 배포 후 받은 Web App URL을 여기에 입력하세요.
+        const WEB_APP_URL = "https://script.google.com/macros/s/AKfycbxTa7jGCExr4wF5wtiB9mWhMBxBBoqP4IjJQPYg0zp5Q07PovRm7mUmoCyog99XKG3Y/exec"; 
+
         const form = document.getElementById('applyForm');
+        const submitBtn = document.getElementById('submitBtn');
+        const btnText = document.getElementById('btnText');
+        const loadingSpinner = document.getElementById('loadingSpinner');
         const modal = document.getElementById('successModal');
 
-        form.addEventListener('submit', (e) => {
+        form.addEventListener('submit', async (e) => {
             e.preventDefault();
-            modal.classList.remove('hidden');
-            modal.classList.add('flex');
-            form.reset();
+            
+            // UI 상태 변경 (로딩 중)
+            submitBtn.disabled = true;
+            btnText.innerText = "처리 중...";
+            loadingSpinner.classList.remove('hidden');
+
+            const formData = new FormData(form);
+            const data = Object.fromEntries(formData.entries());
+
+            try {
+                // 구글 스프레드시트로 전송
+                await fetch(WEB_APP_URL, {
+                    method: 'POST',
+                    mode: 'no-cors',
+                    cache: 'no-cache',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(data)
+                });
+
+                // 성공 모달 표시
+                modal.classList.remove('hidden');
+                modal.classList.add('flex');
+                form.reset();
+
+            } catch (error) {
+                console.error("Error submitting form:", error);
+                alert("신청 처리 중 오류가 발생했습니다. 잠시 후 다시 시도해주세요.");
+            } finally {
+                // UI 복구
+                submitBtn.disabled = false;
+                btnText.innerText = "[전문가 과정 신청하기]";
+                loadingSpinner.classList.add('hidden');
+            }
         });
 
         function closeModal() {
@@ -485,9 +554,8 @@
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
+                const target = document.querySelector(this.getAttribute('href'));
+                if(target) target.scrollIntoView({ behavior: 'smooth' });
             });
         });
     </script>
